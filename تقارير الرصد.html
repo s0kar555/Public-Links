@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تقارير الرصد</title>
+
+  <!-- Favicon: Folder -->
+  <link rel="icon" href="https://img.icons8.com/fluency/96/folder-invoices.png" type="image/png">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/180/folder-invoices.png">
+
+  <style>
+    :root{
+      --bg: #fdfdfd;
+      --card: #ffffff;
+      --text: #1e293b;           /* slate-800 */
+      --muted: #64748b;          /* slate-500 */
+      --accent: #3b82f6;         /* blue-500 */
+      --accent-weak: #eff6ff;    /* blue-50 */
+      --radius: 16px;
+    }
+
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", sans-serif;
+      background: linear-gradient(160deg, #f9fbff 0%, #eef5ff 100%);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+    }
+
+    .shell{
+      width:min(960px, 100%);
+      padding:28px;
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: 0 6px 20px rgba(0,0,0,.06);
+      border:1px solid #e2e8f0;
+    }
+
+    header{
+      display:flex;
+      justify-content: center; /* يوسّط العناصر أفقياً */
+      align-items:center;
+      gap:10px;
+      margin-bottom:24px;
+      text-align: center;
+    }
+
+    .brand{
+      width:40px;height:40px;
+      border-radius:10px;
+      display:grid; place-items:center;
+      background: var(--accent-weak);
+      color:#fff;
+      font-size:20px;
+    }
+
+    h1{
+      margin:0;
+      font-size:1.6rem;
+    }
+    .subtitle{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap:16px;
+    }
+
+    .folder{
+      display:flex;
+      flex-direction:column;
+      padding:18px;
+      text-decoration:none;
+      color:inherit;
+      background: var(--accent-weak);
+      border:1px solid #dbeafe;
+      border-radius: var(--radius);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .folder:hover{
+      transform: translateY(-4px);
+      background: #dbeafe;
+      box-shadow: 0 8px 18px rgba(59,130,246,.15);
+    }
+
+    .icon{
+      font-size:24px;
+      margin-bottom:10px;
+      color: var(--accent);
+    }
+
+    .title{
+      font-weight:600;
+      margin-bottom:4px;
+      font-size: 1rem;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:.85rem;
+    }
+    
+    .row {
+      display: flex;
+      align-items: center;   /* يخليهم بمحاذاة وسط السطر */
+      gap: 8px;              /* مسافة بين الأيقونة والنص */
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand">📁</div>
+      <div>
+        <h1>تقارير الرصد</h1>
+        <!-- <p class="subtitle">تقارير الرصد</p> -->
+      </div>
+    </header>
+
+    <section class="grid">
+      <a class="folder" href="https://drive.google.com/drive/folders/1cSlaYjr1LGbf-GxaZBqf7uRZnVC3m7qd" target="_blank">
+        <div class="row">
+        <div class="icon">📂</div>
+        <div class="title">حازم الجهني</div>
+        </div>
+        <div class="meta">(شرق مكة المكرمة + شمال مكة المكرمة)</div>
+      </a>
+      <a class="folder" href="https://drive.google.com/drive/folders/1vtXm2XKBOMnXV-9SCQOFDNlnyu8bY1lz" target="_blank">
+        <div class="row">
+        <div class="icon">📂</div>
+        <div class="title">خالد خضري</div>
+        </div>
+        <div class="meta">(بحرة + غرب مكة المكرمة)</div>
+      </a>
+      <a class="folder" href="https://drive.google.com/drive/folders/1HAJlLX-faL8ublynF0_LdxrJOplU7CvH" target="_blank">
+        <div class="row">
+        <div class="icon">📂</div>
+        <div class="title">رامي راوة</div>
+        </div>
+        <div class="meta">(جنوب مكة المكرمة + المشاعر المقدسة + المنطقة المركزية)</div>
+      </a>
+      <a class="folder" href="https://drive.google.com/drive/folders/1WIWTgZfpiz3rNMpurSKpHMXwLr32kQcv" target="_blank">
+        <div class="row">
+        <div class="icon">📂</div>
+        <div class="title">التقارير المحذوفة</div>
+        <!-- <div class="meta">مشاريع / مستودعات</div> -->
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

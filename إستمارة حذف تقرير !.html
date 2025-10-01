@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>إستمارة حذف تقرير!</title>
+
+  <!-- Favicon: Folder -->
+  <link rel="icon" href="https://img.icons8.com/?size=96&id=39012" type="image/png">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/?size=180&id=39012">
+
+<style> 
+  :root{
+    --bg: #fdfdfd;
+    --card: #ffffff;
+    --text: #1e293b;           /* slate-800 */
+    --muted: #64748b;          /* slate-500 */
+    --accent: #dc2626;         /* red-600 */
+    --accent-weak: #fae3e1;    /* أحمر فاتح */
+    --radius: 16px;
+  }
+
+  body{
+    margin:0;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", sans-serif;
+    background: linear-gradient(160deg, #fffafa 0%, #fae3e1 100%);
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+  }
+
+  .shell{
+    padding:28px;
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    border:1px solid #fecaca; /* حدود أحمر فاتح */
+  }
+
+  header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:24px;
+    text-align: center;
+  }
+
+  .brand{
+    width:40px;height:40px;
+    border-radius:10px;
+    display:grid; place-items:center;
+    background: var(--accent-weak);
+    color:#fff;
+    font-size:20px;
+  }
+
+  h1{
+    margin:0;
+    font-size:1.6rem;
+  }
+  .subtitle{
+    margin:4px 0 0;
+    color:var(--muted);
+    font-size:.9rem;
+  }
+
+  .grid{
+    display:grid;
+    gap:16px;
+  }
+
+  .folder{
+    display:flex;
+    flex-direction:column;
+    padding:18px;
+    text-decoration:none;
+    color:inherit;
+    background: var(--accent-weak);
+    border:1px solid #fecaca;
+    border-radius: var(--radius);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+  }
+  .folder:hover{
+    transform: translateY(-4px);
+    background: #fecaca; /* أغمق عند hover */
+    box-shadow: 0 8px 18px rgba(220,38,38,.15);
+  }
+
+  .icon{
+    font-size:24px;
+    margin-bottom:10px;
+    color: var(--accent);
+    align-items: center; /* يوسّط الأيقونة والنص عموديًا */
+  }
+
+  .title{
+    font-weight:600;
+    margin-bottom:4px;
+    font-size: 1rem;
+  }
+  .meta{
+    color:var(--muted);
+    font-size:.85rem;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center; /* يوسّط الأيقونة والنص عموديًا */
+    gap: 4px;           /* صغّرت المسافة بدل 8px */
+  }
+</style>
+
+
+</head>
+<body>
+  <main class="shell">
+    <header>
+<div class="brand">
+  <img src="https://img.icons8.com/?size=96&id=39012&format=png" alt="Task Icon" width="24" height="24">
+</div>
+      <div>
+        <h1>إستمارة حذف تقرير!</h1>
+      </div>
+    </header>
+
+    <section class="grid">
+      <a class="folder" href="https://forms.gle/1dUAc61xnui6cQoN8" target="_blank">
+        <div class="row">
+<div class="row">
+  <img src="https://img.icons8.com/?size=96&id=39012&format=png" alt="Task Icon" width="24" height="24">
+</div>
+
+        <div class="title">حذف تقرير سابق</div>
+        </div>
+        <!-- <div class="meta">نطاق: شرق مكة المكرمة (الشرائع - المعابدة) + شمال مكة المكرمة (العمرة - العتيبية)</div> -->
+      </a>
+    </section>
+  </main>
+</body>
+</html>
